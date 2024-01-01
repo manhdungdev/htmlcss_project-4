@@ -70,6 +70,8 @@ svg {
 
 .header {
     padding-top: 14px;
+    background: #f9f4f0;
+    backdrop-filter: blur(20px);
 }
 
 .header--sticky {
@@ -118,11 +120,72 @@ svg {
     --height: 50px;
 
     transition: border-color, background, color;
-    transition-duration:  0.2s;
+    transition-duration: 0.2s;
 }
 
-.header-authen__btn:hover{
+.header-authen__btn:hover {
     border-color: #FF5B2E;
     background: #FF5B2E;
     color: #fff;
+}
+
+/* Hero */
+
+.hero {
+    margin-top: 92px;
+}
+
+.hero__body {
+    display: flex;
+}
+
+.hero__media {
+    position: relative;
+    width: 47%;
+}
+
+.hero__img-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 388px;
+    height: 488px;
+    border-radius: 16px;
+    border: 3px solid #FFF;
+    background: linear-gradient(180deg, #FFA78D 0%, #FF8C60 100%);
+    box-shadow: 11px 18px 65px 0px rgba(255, 155, 121, 0.12);
+}
+
+.hero__img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.hero__deco--dive {
+    z-index: -1;
+}
+
+.hero__decor-left {
+    position: absolute;
+    bottom: 10px;
+    left: -56px;
+}
+
+.hero__decor-right {
+    position: absolute;
+    top: 17px;
+    right: -42px;
+}
+
+.hero__img-wrap--small {
+    position: absolute;
+    bottom: -58px;
+    right: 23px;
+    width: 186px;
+    height: 244px;
+    border: 2px solid rgba(255, 255, 255, 0.65);
+    background: linear-gradient(206deg, #FAA7AD 4.68%, #E87F8A 98.09%);
+    box-shadow: 8px 18px 36px -6px rgba(234, 148, 157, 0.17);
 }
