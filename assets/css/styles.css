@@ -751,8 +751,7 @@ svg {
 .staff-item__wrap {
     position: relative;
     margin: 0 16px;
-    border-radius: 129.5px;
-    overflow: hidden;
+    border-radius: 130px;
 }
 
 .staff-item__wrap::before {
@@ -764,10 +763,52 @@ svg {
     background: linear-gradient(180deg, #90CCFF 0%, #59A8EB 95.96%);
 }
 
+.staff-item__wrap::after {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    translate: -50% 0;
+}
+
+
+.staff-item:nth-child(1) .staff-item__wrap::after {
+    content: url(../icon/staff-decor-1.svg);
+}
+
+.staff-item:nth-child(2) .staff-item__wrap::before {
+    background: linear-gradient(180deg, #FF997E 0%, #F3752E 100%);
+}
+
+.staff-item:nth-child(2) .staff-item__wrap::after {
+    content: url(../icon/staff-decor-2.svg);
+}
+
+.staff-item:nth-child(3) .staff-item__wrap::before {
+    background: linear-gradient(180deg, #FABF3E 0%, #FFA14A 100%);
+}
+
+.staff-item:nth-child(3) .staff-item__wrap::after {
+    content: url(../icon/staff-decor-3.svg);
+}
+
+.staff-item:nth-child(4) .staff-item__wrap::before {
+    background: linear-gradient(180deg, #5BD6E2 0%, #00A7CC 100%);
+}
+
+.staff-item:nth-child(4) .staff-item__wrap::after {
+    content: url(../icon/staff-decor-4.svg);
+}
+
+.staff-item:nth-child(2n) .staff-item__wrap::after {
+    top: 0;
+    bottom: auto;
+}
+
 .staff-item__img {
     position: relative;
     z-index: 1;
     width: 100%;
+    border-radius: inherit;
     object-fit: cover;
 }
 
