@@ -632,6 +632,7 @@ svg {
 .service__body {
     display: grid;
     grid-template-columns: auto 1fr auto;
+    column-gap: 64px;
     margin-top: 71px;
 }
 
@@ -642,7 +643,7 @@ svg {
     background: #FFF;
 }
 
-.service-item + .service-item{
+.service-item+.service-item {
     margin-top: 24px;
 }
 
@@ -663,7 +664,7 @@ svg {
     height: 22px;
     margin-right: 12px;
     border-radius: 22px;
-    background: linear-gradient(90deg, #FF5B2E 0.39%, #FFA187 100.29%);
+    background: linear-gradient( #FF5B2E , #FFA187 );
 }
 
 .service-item__desc {
@@ -686,4 +687,48 @@ svg {
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1;
+}
+
+.service-item__more:hover{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.service__wrap {
+    position: relative;
+    margin-top: 17px;
+    /* z-index: 1; */
+}
+
+.service__wrap::after {
+    position: absolute;
+    inset: auto 22px 0 22px;
+    content: "";
+    height: 350px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #9DF1FB 0%, #73D0DB 108.14%);
+    /* z-index: -1; */
+}
+
+.service__img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.service__cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.service__btn {
+    min-width: 214px;
+    border-radius: 31px;
+    border: 1px solid #FF5B2E;
+    color: #FF5B2E;
+    font-size: 1.6rem;
+    font-weight: 500;
 }
