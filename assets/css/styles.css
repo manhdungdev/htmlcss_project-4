@@ -616,7 +616,8 @@ svg {
     background: #FFF6ED;
 }
 
-.service__desc {
+.service__desc,
+.staff__desc {
     color: #5E6085;
     text-align: center;
     font-family: Sora;
@@ -624,7 +625,8 @@ svg {
     line-height: 1;
 }
 
-.service__heading {
+.service__heading,
+.staff__heading {
     margin-top: 15px;
     text-align: center;
 }
@@ -664,7 +666,7 @@ svg {
     height: 22px;
     margin-right: 12px;
     border-radius: 22px;
-    background: linear-gradient( #FF5B2E , #FFA187 );
+    background: linear-gradient(#FF5B2E, #FFA187);
 }
 
 .service-item__desc {
@@ -689,7 +691,7 @@ svg {
     line-height: 1;
 }
 
-.service-item__more:hover{
+.service-item__more:hover {
     text-decoration: underline;
     text-underline-offset: 2px;
 }
@@ -717,7 +719,7 @@ svg {
     z-index: 1;
 }
 
-.service__cta{
+.service__cta {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -730,5 +732,77 @@ svg {
     border: 1px solid #FF5B2E;
     color: #FF5B2E;
     font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* Staff */
+
+.staff {
+    padding: 130px 0;
+}
+
+.staff__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    margin-top: 45px;
+}
+
+.staff-item__wrap {
+    position: relative;
+    margin: 0 16px;
+    border-radius: 129.5px;
+    overflow: hidden;
+}
+
+.staff-item__wrap::before {
+    position: absolute;
+    inset: auto 0 0 0;
+    content: "";
+    height: 266px;
+    border-radius: inherit;
+    background: linear-gradient(180deg, #90CCFF 0%, #59A8EB 95.96%);
+}
+
+.staff-item__img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    object-fit: cover;
+}
+
+.staff-item__job,
+.staff-item__name {
+    text-align: center;
+}
+
+.staff-item__job {
+    margin-top: 34px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.staff-item__name {
+    margin-top: 14px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.staff__cta {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.staff__cta-btn {
+    min-width: 193px;
+    border-radius: 31px;
+    border: 1px solid #FF5B2E;
+    color: #FF5B2E;
     font-weight: 500;
 }
