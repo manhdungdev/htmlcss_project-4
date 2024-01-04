@@ -350,6 +350,7 @@ button {
 .about {
     margin-top: 77px;
     padding: 53px 0;
+    scroll-margin-top: 85px;
 }
 
 .about__body {
@@ -627,6 +628,7 @@ button {
     margin-top: 130px;
     padding: 68px 0 100px;
     background: #FFF6ED;
+    scroll-margin-top: 30px;
 }
 
 .service__desc,
@@ -659,7 +661,7 @@ button {
     transition: 0.25s;
 }
 
-.service-item:hover{
+.service-item:hover {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2), -2px -2px 5px rgba(0, 0, 0, 0.05);
 }
 
@@ -1034,6 +1036,7 @@ button {
 /* Review */
 .review {
     padding: 53px 0;
+    scroll-margin-top: 125px;
 }
 
 .review__body {
