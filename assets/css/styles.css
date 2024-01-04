@@ -93,6 +93,17 @@ button {
     line-height: 1.875;
 }
 
+.line-clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.clamp-2{
+    --line-clamp: 3;
+}
+
 /* Header */
 
 .header {
@@ -1052,11 +1063,11 @@ button {
     rotate: 180deg;
 }
 
-.review__content{
+.review__content {
     overflow: hidden;
 }
 
-.review__list{
+.review__list {
     display: flex;
 }
 
@@ -1077,7 +1088,7 @@ button {
     border-radius: 137px;
 }
 
-.review-item__wrap::after{
+.review-item__wrap::after {
     content: "";
     position: absolute;
     inset: auto 0 0 0;
@@ -1149,7 +1160,7 @@ button {
     border: 1px solid #FF5B2E;
 }
 
-.review__dot:not(.review__dot--active):hover{
+.review__dot:not(.review__dot--active):hover {
     cursor: pointer;
     background: #FF5B2E;
 }
@@ -1157,4 +1168,79 @@ button {
 .review__dot--active {
     width: 24px;
     background: #FF5B2E;
+}
+
+/* Blog */
+.blog {
+    padding: 77px 0 131px;
+}
+
+.blog__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog__content {
+    width: 350px;
+    margin-right: 73px;
+}
+
+.blog__btn {
+    margin-top: 24px;
+    width: 182px;
+    border-radius: 31px;
+    border: 1px solid #FF5B2E;
+    color: #FF5B2E;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.blog__list {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+}
+
+.blog-item__media {
+    border-radius: 24px;
+    padding: 24px 0 0 36px;
+    background: #90CCFF;
+}
+
+.blog-item__time {
+    color: #FFF;
+    font-family: Sora, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.21;
+}
+
+.blog-item__img {
+    width: 100%;
+    height: 296px;
+    margin-top: 25px;
+    object-fit: cover;
+}
+
+.blog-item__infor {
+    padding-right: 12px;
+}
+
+.blog-item__heading {
+    margin-top: 28px;
+    color: #000958;
+    font-family: Sora, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.545;
+}
+
+.blog-item__desc {
+    margin-top: 16px;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.71;
 }
