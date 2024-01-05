@@ -29,6 +29,10 @@ body {
     visibility: visible;
 }
 
+[data-aos]{
+    pointer-events: initial !important;
+}
+
 [data-aos].animate__slideInDown {
     /* animation-duration: 2s;
     animation-delay: 3s;
@@ -55,11 +59,30 @@ body {
     animation-duration: 0.3s;
 }
 
+[data-aos].header {
+    animation-fill-mode: forwards;
+}
+
 [data-aos].hero__desc {
     animation-delay: 0.2s;
 }
 
+[data-aos].service__media{
+    animation-delay: 0.5s;
+}
+
+
+
+[data-aos].service__heading {
+    animation-delay: 0.5s;
+}
+
+
 /* Common */
+
+body{
+    overflow-x: hidden;
+}
 
 a {
     text-decoration: none;
@@ -839,6 +862,18 @@ button {
     background-repeat: no-repeat;
     background-position: 0 100%;
     background-size: 100%;
+}
+
+.staff-item:nth-child(2){
+    animation-delay: 0.3s;
+}
+
+.staff-item:nth-child(3){
+    animation-delay: 0.6s;
+}
+
+.staff-item:nth-child(4){
+    animation-delay: 0.9s;
 }
 
 
