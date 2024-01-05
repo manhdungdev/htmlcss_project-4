@@ -27,11 +27,15 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- Animation -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
   <!-- Header -->
-  <header class="header header--sticky">
+  <header class="header header--sticky" data-aos="animate__fadeInDown">
     <div class="container">
       <div class="header__body">
         <a href="#">
@@ -69,7 +73,7 @@
   <section class="hero">
     <div class="container">
       <div class="hero__body">
-        <div class="hero__media">
+        <div class="hero__media" data-aos="animate__slideInDown">
           <figure class="hero__img-wrap">
             <img src="assets/img/hero-1.png" alt="Hero pet 1" class="hero__img" />
             <img src="assets/icon/decoration-1.svg" alt="decoration 1" class="hero__deco--dive hero__decor-left" />
@@ -104,15 +108,15 @@
           </div>
         </div>
         <div class="hero__content">
-          <h2 class="hero__heading">
+          <h2 class="hero__heading" data-aos="animate__slideInUp">
             Established & Trusted Pet Care Service
           </h2>
-          <p class="hero__desc">
+          <p class="hero__desc" data-aos="animate__slideInUp">
             Discover a wide variety of Pawsitive services to choose from,
             including daycare, private walks, office duty and spa.
           </p>
 
-          <div class="hero-cta">
+          <div class="hero-cta" data-aos="animate__slideInUp">
             <a href="#!" class="btn hero-cta__btn">
               Book a Meet
               <span class="hero-cta__wrap">
@@ -749,6 +753,16 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      useClassNames: true,
+      initClassName: null,
+      animatedClassName: "animate__animated"
+    });
+  </script>
+
 </body>
 
 </html>

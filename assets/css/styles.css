@@ -19,6 +19,39 @@ body {
     --primary-color: #FF5B2E;
 }
 
+/* Animation */
+
+[data-aos] {
+    visibility: hidden;
+}
+
+[data-aos].animate__animated {
+    visibility: visible;
+}
+
+[data-aos].animate__slideInDown {
+    /* animation-duration: 2s;
+    animation-delay: 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite; */
+    /* animation-duration:  2s; */
+}
+
+[data-aos].animate__flipInX {
+    animation-duration: 0.3s;
+}
+
+[data-aos].hero__desc {
+    animation-delay: 0.2s;
+}
+
+[data-aos].hero-cta {
+    animation-delay: 0.3s;
+
+}
+
+
+
 /* Common */
 
 a {
